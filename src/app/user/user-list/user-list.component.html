@@ -1,0 +1,19 @@
+<p>
+  user-list works!
+</p>
+
+<div *ngFor='let user of users'>
+  <table class='table'>
+    <tr>
+      <td>
+        {{user.userId}}
+      </td>
+      <td>
+        {{user.name}}
+      </td>
+      <td>
+        {{user.creationDate}}
+      </td>
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,26 @@
+Name: <input type='text' name='userName' [(ngModel)]='user.name'/>
+
+
+<button class='btn btn-primary' (click)=addUser()>Add User</button>
+<button class='btn btn-info' (click)=getUsers()>Display Users</button>
+
+
+<p>
+  user-form works!
+</p>
+
+<div *ngFor='let user of users'>
+  <table class='table'>
+    <tr>
+      <!-- <td>
+        {{user.userId}}
+      </td> -->
+      <td>
+        {{user.name}}
+      </td>
+      <!-- <td>
+        {{user.creationDate}}
+      </td> -->
+    </tr>
+  </table>
+</div>
